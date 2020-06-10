@@ -1,0 +1,42 @@
+---
+title: "Developing Data Products Course Project"
+author: "Seema"
+date: "June 10, 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+## Introduction
+
+This presentation is part of the Developing Data Products Coursera.org course project submission.
+
+It is an R Presentation generated with RStudio.
+
+The Shiny application pitched by this presentation is at https://zipcodeexplorer.shinyapps.io/ZIPCode_Explorer/
+
+The Shiny app source code is available at https://github.com/SimaMN/Developing-Data-Products-course-Week-4-Shiny-Application-and-Reproducible-Pitch
+
+## What is the purpose of the Shiny app?
+
+The Shiny app is based on the interactive map from Washington Post ranking ZIP Codes based on main SES factors. The dataset was accessed from https://github.com/SimaMN/shiny-examples/tree/master/063-superzip-example
+
+```{r cars, echo = TRUE}
+allzips <- readRDS("superzip.rds")
+
+head (allzips, 3)
+
+```
+
+## How does it works?
+
+Select a state or City to explore the ZIP ranking and characteristics. 
+
+
+## Ready to give it a try?
+
+The Shiny application pitched by this presentation is at https://zipcodeexplorer.shinyapps.io/ZIPCode_Explorer/

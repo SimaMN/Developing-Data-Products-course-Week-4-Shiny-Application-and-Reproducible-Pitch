@@ -1,0 +1,12 @@
+name: ZIPCode_Explorer
+title: ZIPCode_Explorer
+username:
+account: zipcodeexplorer
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2434424
+bundleId: 3249895
+url: https://zipcodeexplorer.shinyapps.io/ZIPCode_Explorer/
+when: 1591759864.39027
+asMultiple: FALSE
+asStatic: FALSE

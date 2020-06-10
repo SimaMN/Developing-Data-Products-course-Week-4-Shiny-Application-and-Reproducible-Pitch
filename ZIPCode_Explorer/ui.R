@@ -1,7 +1,8 @@
 library(leaflet)
 library(dplyr)
+library(curl)
 
-allzips <- readRDS("C:/Users/snamin/Documents/GitHub/Developing-Data-Products-course-Week-4-Shiny-Application-and-Reproducible-Pitch/data/superzip.rds")
+allzips <- readRDS("superzip.rds")
 allzips$latitude <- jitter(allzips$latitude)
 allzips$longitude <- jitter(allzips$longitude)
 allzips$college <- allzips$college * 100
@@ -18,8 +19,7 @@ cleantable <- allzips %>%
     Superzip = superzip,
     Population = adultpop,
     College = college,
-    Income = income,
-    Lat = latitude,
+   Lat = latitude,
     Long = longitude
   )
 
